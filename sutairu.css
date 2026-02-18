@@ -1,0 +1,64 @@
+diff --git a/styles.css b/styles.css
+new file mode 100644
+index 0000000000000000000000000000000000000000..e68b114963070d1fafd9b88daf64c66e51b560e5
+--- /dev/null
++++ b/styles.css
+@@ -0,0 +1,58 @@
++:root {
++  color-scheme: dark;
++  font-family: Inter, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
++}
++
++* {
++  box-sizing: border-box;
++}
++
++body {
++  margin: 0;
++  overflow: hidden;
++  background: radial-gradient(circle at top, #25384f, #0d1117 65%);
++}
++
++#gameCanvas {
++  display: block;
++  width: 100vw;
++  height: 100vh;
++}
++
++#hud {
++  position: fixed;
++  z-index: 10;
++  top: 16px;
++  left: 16px;
++  max-width: min(600px, 90vw);
++  background: rgba(0, 0, 0, 0.45);
++  border: 1px solid rgba(255, 255, 255, 0.2);
++  border-radius: 12px;
++  padding: 12px 14px;
++  backdrop-filter: blur(6px);
++}
++
++#hud h1 {
++  margin: 0 0 6px;
++  font-size: 1.1rem;
++}
++
++#hud p {
++  margin: 4px 0;
++  font-size: 0.9rem;
++}
++
++#lockButton {
++  margin-top: 8px;
++  border: none;
++  border-radius: 8px;
++  padding: 8px 12px;
++  cursor: pointer;
++  color: #0a0f14;
++  font-weight: 700;
++  background: linear-gradient(90deg, #57e6ff, #b3f8ff);
++}
++
++#lockButton:hover {
++  filter: brightness(1.07);
++}
